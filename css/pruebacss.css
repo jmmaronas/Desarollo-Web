@@ -1,0 +1,12 @@
+main {
+  background-color: chocolate; }
+
+header {
+  background-color: red;
+  height: 200px;
+  width: 100%; }
+  header div {
+    width: 100px;
+    height: 100px; }
+  header h1 {
+    color: white; }
