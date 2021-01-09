@@ -91,6 +91,7 @@ header {
   .boxMainIndex article p {
     font-family: sans-serif;
     font-size: 2.8rem;
+    font-weight: 500;
     color: white;
     text-align: center;
     line-height: 1.5;
@@ -251,7 +252,8 @@ form {
 /* REFERENCIAS */
 .boxMainRef {
   color: white;
-  font-size: 2rem; }
+  font-size: 2rem;
+  width: 100%; }
   .boxMainRef h2 {
     margin: 1em 0 2em;
     font-size: 5rem;
@@ -366,6 +368,15 @@ form {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 32%; }
+  header .header__nav__alinearLista {
+    margin-left: 2rem; }
+    header .header__nav__alinearLista li a {
+      font-size: 2.4rem !important; }
+  .propuestas h2 {
+    font-size: 3.5rem;
+    font-weight: 500; }
+  .boxMainRef h2 {
+    font-size: 4rem; }
   .contenedorAuspiciantes {
     display: grid;
     grid-template-columns: 1fr;
@@ -387,13 +398,14 @@ form {
     justify-content: center; }
     .header__nav__alinearLista li {
       margin: 0 1rem 0 0 !important; }
-  .boxMainIndex img {
+  .boxMainIndex article img {
     width: 35rem;
     height: 35rem;
     padding: none; }
-  .boxMainIndex p {
-    font-size: 4rem;
-    width: 35rem; } }
+  .boxMainIndex article p {
+    font-size: 2.6rem !important;
+    letter-spacing: 0;
+    line-height: 1; } }
 
 /* ANIMATION */
 @keyframes imgIndex {
