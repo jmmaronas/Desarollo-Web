@@ -7,9 +7,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-image: url("../images/image02.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #4e4d4d; }
 
 header {
   width: 100%;
@@ -21,7 +19,7 @@ header {
     width: 20rem;
     height: 20rem;
     margin: 5px 0 5px 5px;
-    background-color: #2d7230;
+    background-color: #afc26a;
     color: white;
     border-radius: 50%;
     border: double 6px chocolate;
@@ -34,18 +32,19 @@ header {
       text-align: center;
       position: relative;
       top: 15% -12rem;
-      left: center; }
+      left: center;
+      text-shadow: 4px 3px 3px #864545; }
   header .header__titulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique;
     font-size: 8rem;
     color: white;
-    text-shadow: 2.5px 2.5px #864545;
+    text-shadow: 4px 3px 3px #864545;
     text-align: center; }
   header .header__navMenu {
     align-self: flex-end; }
     header .header__navMenu .menuDesplegable {
-      background-color: rgba(5, 63, 22, 0.6); }
+      background-color: rgba(131, 134, 132, 0.6); }
     header .header__navMenu .header__nav__alinearLista {
       display: flex;
       flex-direction: row;
@@ -68,18 +67,14 @@ header {
           border-bottom: 0.13rem solid wheat; }
 
 /* MAIN*/
-#body main {
-  background-color: rgba(130, 219, 130, 0.3); }
-
 .boxMainIndex h2 {
   margin: 1rem 1rem 3rem;
-  font-size: 5rem;
-  font-family: cursive;
+  font-size: 6rem;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 450;
   color: white;
   text-align: center;
-  text-shadow: 3px 3px #db8242; }
+  text-shadow: 3px 3px 3px #db8242; }
 
 .boxMainIndex article {
   width: 100%;
@@ -89,7 +84,6 @@ header {
   align-items: center;
   padding: 1rem 2rem 3rem 1rem; }
   .boxMainIndex article p {
-    font-family: sans-serif;
     font-size: 2.8rem;
     font-weight: 500;
     color: white;
@@ -97,6 +91,11 @@ header {
     line-height: 1.5;
     letter-spacing: 0.2rem;
     padding: 0 1rem 0px 1rem; }
+    .boxMainIndex article p a {
+      color: white;
+      font-style: italic; }
+    .boxMainIndex article p a:hover {
+      color: #a7a5a5; }
   .boxMainIndex article img {
     width: 300;
     height: 300;
@@ -117,15 +116,20 @@ header {
   justify-content: flex-start;
   align-items: center; }
 
+#aside {
+  border-left: 1px solid rgba(255, 255, 255, 0.3); }
+
 .boxAsideIndex h2 {
-  font-family: sans-serif;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 450;
   color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px #bb7711; }
+  text-align: center;
+  text-shadow: 3px 3px 3px #db8242; }
 
 .boxAsideIndex p {
   color: white;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 2rem;
   text-shadow: 1px 1px black;
   line-height: 2.5; }
@@ -160,7 +164,7 @@ header {
   font-size: 2.5rem; }
   .sectionCarousel img {
     height: 50rem;
-    background-color: #545a4e;
+    background-color: #4e4d4d;
     padding: 2rem 10rem 7rem; }
 
 /* Modifico y Agrego link a la clase de Bootstrap */
@@ -169,49 +173,52 @@ header {
   text-decoration: none;
   font-size: 2rem; }
 
-/* Fin del Cambio*/
-.tableRecetas {
-  margin: 2rem; }
-  .tableRecetas tr th {
-    font-size: 2.6rem;
-    background-color: cornflowerblue;
-    width: 18rem; }
-  .tableRecetas tr td {
-    background-color: blanchedalmond;
-    font-size: 1.5rem; }
-    .tableRecetas tr td li {
-      margin-left: 2.5rem;
-      line-height: 1.5; }
-      .tableRecetas tr td li p {
-        line-height: 1.5; }
-    .tableRecetas tr td h2 {
-      padding-bottom: 2rem;
-      text-align: center;
-      text-decoration: underline; }
-    .tableRecetas tr td img {
-      width: 100%;
-      height: 20rem;
-      padding-bottom: 2rem;
-      text-align: center;
-      text-decoration: underline; }
+.recetas__main {
+  color: white; }
+  .recetas__main h2 {
+    margin: 7rem 0 7rem 0;
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 450;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px #db8242;
+    max-width: 80%; }
+  .recetas__main h3 {
+    margin: 3rem 0 3rem 0;
+    font-size: 3.2rem;
+    text-decoration: underline; }
+  .recetas__main h4 {
+    margin: 3rem 0 3rem 0;
+    font-size: 3rem;
+    text-decoration: underline; }
+  .recetas__main ul li, .recetas__main ol li {
+    font-size: 2.4rem;
+    margin-left: 2rem; }
+  .recetas__main ul li {
+    list-style: none; }
+  .recetas__main img {
+    max-height: 48rem;
+    margin: auto; }
 
 /* PAGINA CONTACTO */
 .boxMainForm {
   margin: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-right: 0; }
 
 form {
   padding: 5rem;
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold; }
   form fieldset {
     font-size: 1.5rem;
     padding: 5rem;
     background-color: rgba(240, 230, 140, 0.2); }
   form textarea {
-    width: 50rem;
+    width: 60rem;
     height: 20rem; }
   form select {
     margin-bottom: 20px;
@@ -220,31 +227,32 @@ form {
     border-radius: 5px; }
 
 .encabezado {
-  text-align: center;
   margin-bottom: 2rem;
-  font-size: 4.5rem;
-  color: #b13756;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 450;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 3px #db8242; }
 
 .button {
   font-size: 2rem;
-  height: 6rem;
   margin: 2rem;
-  border: solid 2px #5586c5;
   border-radius: 10px;
-  color: white;
-  background-image: linear-gradient(to bottom, #065c7e 50%, white 100%);
-  padding: 1rem; }
+  border: solid 2px #a7a0f5;
+  background-image: linear-gradient(to bottom, #6c74ce 50%, white 100%); }
 
 .button:hover {
   background-color: cornflowerblue;
   color: black; }
 
 .input {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
-.checkbox label {
-  margin-left: 0.5rem; }
+.checkbox {
+  padding-left: 3rem; }
+  .checkbox label {
+    margin-left: 0.5rem; }
 
 .form-group label {
   font-size: 2.5rem; }
@@ -255,9 +263,13 @@ form {
   font-size: 2rem;
   width: 100%; }
   .boxMainRef h2 {
-    margin: 1em 0 2em;
-    font-size: 5rem;
-    text-align: center; }
+    margin: 4rem 0 6rem;
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 450;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px #db8242; }
 
 .contenedorAuspiciantes {
   display: grid;
@@ -265,6 +277,10 @@ form {
   justify-content: space-around;
   row-gap: 3rem;
   align-items: center; }
+  .contenedorAuspiciantes a {
+    color: whitesmoke; }
+  .contenedorAuspiciantes a:hover {
+    color: #a7a5a5; }
 
 .auspiciantes {
   display: flex;
@@ -274,32 +290,30 @@ form {
     height: 10em; }
   .auspiciantes p {
     max-width: 13em;
-    text-align: justify; }
+    text-align: center; }
 
 /* PROPUESTAS */
 .boxMainProp {
-  background-color: rgba(240, 230, 140, 0.3);
   color: white;
   font-size: 1.5rem;
   display: grid;
-  grid-template-rows: repeat(4, 23em);
+  grid-template-rows: repeat(4, 25%);
   margin: auto;
-  border-radius: 1rem;
-  margin-top: 2rem; }
+  border-radius: 1rem; }
 
 .propuestas {
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .propuestas h2 {
-    font-size: 3rem;
-    font-family: cursive;
-    font-style: italic;
-    font-weight: lighter;
-    margin-bottom: 1rem;
-    margin: auto;
+    margin: 4rem 0 2rem 0;
     text-align: center;
-    text-shadow: 3px 3px #db8242; }
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 450;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px #db8242; }
 
 .boxPropuestas {
   position: relative;
@@ -318,7 +332,7 @@ form {
     background-color: #7c53ec;
     border-radius: 10px; }
   .boxPropuestas p {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 2.5rem;
     align-items: justify;
     max-width: 40rem; }
@@ -372,11 +386,6 @@ form {
     margin-left: 2rem; }
     header .header__nav__alinearLista li a {
       font-size: 2.4rem !important; }
-  .propuestas h2 {
-    font-size: 3.5rem;
-    font-weight: 500; }
-  .boxMainRef h2 {
-    font-size: 4rem; }
   .contenedorAuspiciantes {
     display: grid;
     grid-template-columns: 1fr;

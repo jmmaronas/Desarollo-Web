@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['enviar'])){//si el botón con el name enviar es pulsado
-        if(!empty($_POST['nombre'])&& !empty($_POST['email'])&&!empty($_POST['msg'])){
+        if(!empty($_POST['nombre'])&& !empty($_POST['email'])&&!empty($_POST['consulta'])){
         //si no están vacios los inputs name, email y msg 
         //guardo el contenido de cada campo en variables
             $nombre=$_POST['nombre'];
@@ -15,19 +15,19 @@
             if($mail){// si el email se mando respondo éxito con javascript
                 echo "<script>
                         alert('Gracias por tu contacto! en breves nos estaremos comunicando');
-                        window.location='index.html'
+                        window.location='../pages/contacto.html'
                         </script>";
             }else{//si no se pudo enviar el email lo notifico
                 echo "<script>
                         alert('Lamentamos decirle que no hemos podido enviar su consulta');
-                        window.location='index.html'
+                        window.location='../pages/contacto.html'
                         </script>";
             }
         }
         else{//si los parámetros están vacios, aunque podemos controlar esto con required
             echo "<script>
             alert('Error faltan parametros');
-                    window.location='index.html'
+                    window.location='../pages/contacto.html'
                   </script>"; 
         }
     }  
